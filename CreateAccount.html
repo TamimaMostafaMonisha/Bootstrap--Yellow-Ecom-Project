@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account - Yellow Clothing</title>
+  <link rel="shortcut icon" href="//www.yellowclothing.net/cdn/shop/files/fav-final-final_32x32.png?v=1706181034"
+  type="image/png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    p {
+      font-size: small;
+      text-align: center;
+    }
+
+    span {
+      font-size: 0.8rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar 1-->
+
+  <div class="d-flex justify-content-between p-2">
+    <div class="navbar__logo ">
+      <a href="YellowHomePage.html"><img class="img-fluid" src="yellow-logo-transparent.jpg" width="200px"
+          alt="YellowLogo"></a>
+    </div>
+    <div>
+      <button onclick="removeDiv()" id="button1" class="btn btn-dark text-white d-flex justify-content-between"
+        type="button" style="width: 300px;">
+        <span>Search</span>
+        <i class="bi bi-search" alt="" height="30px" width="30px" class="align-items-end ms-3"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="button2" class="d-none d-flex align-items-center border m-3 rounded-2  ">
+    <i class="bi bi-search" alt="" height="30px" width="30px" class="align-items-end ms-3"></i>
+    <input type="text" class="form-control border-0">
+  </div>
+
+  <!-- Navbar 2 -->
+
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-light bg-white mb-1 mt-0">
+    <div class="container-fluid">
+      <div class="d-flex ms-auto" id="navbarSupportContent">
+        <ul class="navbar-nav me-auto mb-2">
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#" data-bs-target="#mySidebar1" data-bs-toggle="offcanvas"><i
+                class="bi bi-bag"></i> Shopping Cart </a>
+
+            <div class="offcanvas offcanvas-end" id="mySidebar1">
+              <div class="offcanvas-header">
+                <div class="offcanvas-title">
+                  <h6><b>Shopping Cart</b></h6>
+                  <span>2 items</span>
+                </div>
+                <button type="button" class="btn btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+              </div>
+
+              <div class="offcanvas-body">
+
+                <d class="product-item1">
+
+                  <div class="row">
+                    <div class="col-4">
+                      <a href="">
+                        <img
+                          src="https://www.yellowclothing.net/cdn/shop/files/DSC4853_e545df1c-08b8-4d02-b76c-1f6632770f77.jpg?v=1743491797"
+                          alt="Saree" width="90" height="120" sizes="110px" loading="lazy">
+                      </a>
+                    </div>
+
+                    <div class="col-8 d-inline-flex">
+                      <div class="previewCartItem-content">
+
+                        <span class="text">Women's Saree</span><br>
+                        <span class="previewCartItem-variant text-secondary">
+                          " RED / - "
+                        </span>
+                        <i class="bi bi-pencil-square text-secondary"></i><br>
+                        <span><strong>Tk 4,795.00 </strong></span>
+
+                        <div class="row">
+                          <div class="col-6">
+                            <button class="mt-2 w-100 me-5 border-1 border-secondary bg-white"> - 1 + </button>
+                          </div>
+                          <div class="col-6 d-inline-flex justify-content-end">
+                            <button type="button" class="btn btn-close text-reset ms-5"
+                              data-bs-dismiss="product-item1"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <hr>
+
+                  <div class="product-item2">
+                    <div class="row">
+                      <div class="col-4">
+                        <a href="">
+                          <img
+                            src="https://www.yellowclothing.net/cdn/shop/files/DSC3284_f6bc05b3-c870-4d53-b922-f6b5d8b1b7f0.jpg?v=1744085471"
+                            alt="Saree" width="90" height="120" sizes="110px" loading="lazy">
+                        </a>
+                      </div>
+
+                      <div class="col-8 d-inline-flex">
+                        <div class="previewCartItem-content">
+
+                          <span class="text">Boys Panjabi (8-15 Years)</span><br>
+                          <span class="previewCartItem-variant text-secondary">
+                            DARK TAN / 8/9
+                          </span>
+                          <i class="bi bi-pencil-square text-secondary"></i><br>
+                          <span><strong>Tk 1,995.00 </strong></span>
+
+
+                          <div class="row">
+                            <div class="col-6">
+                              <button class="mt-2 w-100 me-5 border-1 border-secondary bg-white"> - 1 + </button>
+                            </div>
+
+                            <div class="col-6 d-inline-flex justify-content-end">
+                              <button type="button" class="btn btn-close text-reset ms-5"
+                                data-bs-dismiss="product-item2"></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <br>
+              <div class="offcanvas-footer m-3">
+
+                <div class="row">
+                  <div class="col-4"></div>
+                  <div class="col-4">
+                    <button class="w-75 h-100 p-2 border-1 border-secondary bg-white"><i
+                        class="bi bi-clipboard"></i></button>
+                  </div>
+                  <div class="col-4"></div>
+                </div>
+                <br><br>
+                <div class="row">
+                  <div class="col-6">
+                    <span><strong>Subtotal:</strong></span>
+                  </div>
+                  <div class="col-6 d-inline-flex justify-content-end">
+                    <span><strong>Tk 6,790.00</strong></span>
+                  </div>
+                  <div class="col-6">
+                    <span><strong>Total:</strong></span>
+                  </div>
+                  <div class="col-6 d-inline-flex justify-content-end">
+                    <h6><strong>Tk 6,790.00</strong></h6>
+                  </div>
+                </div>
+
+                <p class="text-secondary">Tax included and shipping calculated at checkout</p>
+
+                <button class="btn btn-dark form-control mb-3 " style="font-size: smaller;">CHECKOUT</button>
+
+                <button class="btn btn-white form-control border-dark " style="font-size: smaller;">VIEW
+                  CART</button><br><br><br>
+
+              </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link text-dark" role="button">
+              <i class="bi bi-heart"></i> "My wish list" </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#" data-bs-target="#mySidebar2" data-bs-toggle="offcanvas">
+              Sign In
+            </a>
+            <div class="offcanvas offcanvas-end" id="mySidebar2">
+              <div class="offcanvas-header">
+                <div class="offcanvas-title">
+                  <h6><b> Login </b></h6>
+                </div>
+                <button type="button" class="btn btn-close me-1 text-reset" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+
+                <form action="#">
+                  <label for="email">Email Address <span class="text-danger">*</span></label>
+                  <input class="form-control" type="email" placeholder="Email Address"> <br>
+                  <label for="pass">Password <span class="text-danger">*</span></label>
+                  <input class="form-control mt-1" type="password" placeholder="Password"> <br>
+                  <button type="submit" class="btn btn-dark form-control">LOG IN</button> <br>
+                  <a class="text-center  " href="#">
+                    <p>Forgot your password?</p>
+                  </a><br>
+                  <button class="btn btn-white form-control border-dark " style="font-size: smaller;">CREATE A
+                    ACCOUNT</button>
+
+                </form>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="CreateAccount.html" class="nav-link text-dark">Create an Account</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navbar 3 -->
+
+  <nav class="navbar navbar-expand-lg navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <div class="navbar-nav mx-auto" id="navbarSupportContent">
+        <a href="#" class="navbar-brand"></a>
+
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a href="Spring-summer.html" class="nav-link active text-light" aria-current="page">SPRING-SUMMER '25 </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="NewIn.html" class="nav-link text-light">NEW IN</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown">"MEN"</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Western Wear</a></li>
+              <li><a href="#" class="dropdown-item">Casual Shirts</a></li>
+              <li><a href="#" class="dropdown-item">Templeton Formal Shirts</a></li>
+              <li><a href="#" class="dropdown-item">Polo Shirts</a></li>
+              <li><a href="#" class="dropdown-item">T-Shirts</a></li>
+              <li><a href="#" class="dropdown-item">Chinos and Fashion Trousers</a></li>
+              <li><a href="#" class="dropdown-item">Jeans </a></li>
+              <li><a href="#" class="dropdown-item">Shorts </a></li>
+              <li><a href="#" class="dropdown-item">Ethnic Wear</a></li>
+              <li><a href="#" class="dropdown-item">Panjabi</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown">"WOMEN"</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Western Wear</a></li>
+              <li><a href="#" class="dropdown-item">Ethnic Wear</a></li>
+              <li><a href="#" class="dropdown-item">Western Wear Fashion Tops and Casual Shirts</a></li>
+              <li><a href="#" class="dropdown-item">Long Dresses</a></li>
+              <li><a href="#" class="dropdown-item">T-Shirts</a></li>
+              <li><a href="#" class="dropdown-item">Bling Collection</a></li>
+              <li><a href="#" class="dropdown-item">Jeans </a></li>
+              <li><a href="#" class="dropdown-item">Pants</a></li>
+              <li><a href="#" class="dropdown-item">Tang Tops</a></li>
+              <li><a href="#" class="dropdown-item">Accessories</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="" class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown">"KIDS" </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="dropdown-item">Junior Girls Ethnic </a></li>
+              <li><a href="#" class="dropdown-item">Junior Girls Lawn </a></li>
+              <li><a href="#" class="dropdown-item">Junior Girls Top</a></li>
+              <li><a href="#" class="dropdown-item">Junior Girls Bottom</a></li>
+              <li><a href="#" class="dropdown-item">Boys Panjabi </a></li>
+              <li><a href="#" class="dropdown-item">Boys Kabli </a></li>
+              <li><a href="#" class="dropdown-item">Boys Casual Shirts </a></li>
+              <li><a href="#" class="dropdown-item">Boy Polos </a></li>
+              <li><a href="#" class="dropdown-item">Girls Ethnic Tops </a></li>
+              <li><a href="#" class="dropdown-item">Girl's Lawn</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-light">MINI-ME </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- BreadCrumb -->
+
+  <div class="mt-3 container">
+    <nav
+      style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+      aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="YellowHome.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Create Account</li>
+      </ol>
+    </nav>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+
+        <div>
+          <h4 class="text-center mt-3">CREATE ACCOUNT</h4>
+        </div>
+        <div>
+          <p class="text-center">Please register below to create an account</p>
+        </div>
+        <div class="container">
+          <form action="#">
+            <label for="#">First Name</label> <br>
+            <input class="mt-2 form-control" type="text">
+            <label for="#">Last Name</label> <br>
+            <input class="mt-2 form-control" type="text">
+            <label for="#">Your Email Address <span class="text-danger">*</span></label> <br>
+            <input class="mt-2 form-control " required type="email">
+            <label for="#">Your Password <span class="text-danger">*</span></label> <br>
+            <input class="mt-2 form-control " required type="password">
+            <input class="mt-3 " type="checkbox"> Subscribe to email marketing <br>
+            <button class="btn btn-dark mt-3">CREATE AN ACCOUNT</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
+
+    </div>
+  </div> <br>
+
+  <!-- Footer -->
+
+  <footer class=" bg-dark text-white text-center mt-5">
+
+    <div class="row p-4">
+      <div class="col-2">
+        <h5 class="mb-2">Information</h5>
+        <p>About YELLOW</p>
+        <p>Store Locator</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="col-3">
+        <h5 class="mb-2">Policies</h5>
+        <p>Delivery Policy</p>
+        <p>Exchange Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="col-2">
+        <h5 class="mb-2">Customer Service</h5>
+        <p>+8801958227060</p>
+        <p>SUNDAY-THURSDAY (10:30 AM-5:00 PM)</p>
+        <p>Customerservice@Yellowclothing.Net</p>
+      </div>
+      <div class="col-5 my-auto" style="font-size: x-large;">
+        <i class="bi bi-facebook pe-2"></i>
+        <i class="bi bi-instagram pe-2"></i>
+        <i class="bi bi-youtube pe-2"></i>
+      </div>
+    </div>
+
+    <hr>
+
+    <p class="pb-5"> &copy; 2024 Yellow| All Rights Reserved. </p>
+  </footer>
+
+
+  <script>
+    function removeDiv() {
+
+      document.getElementById("button1").classList.add("d-none");
+      document.getElementById("button2").classList.remove("d-none");
+    }
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

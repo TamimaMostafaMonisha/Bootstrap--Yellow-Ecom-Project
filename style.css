@@ -1,0 +1,123 @@
+p {
+  font-size: small;
+  text-align: center;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  text-align: bottom;
+}
+
+
+    .custom-navbar {
+      height: 60px;
+    }
+    .navbar-brand {
+      letter-spacing: 0.5rem;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+    .icon-btn {
+      background: none;
+      border: none;
+      font-size: 1.25rem;
+      padding: 0 0.75rem;
+      color: black;
+    }
+    .icon-container {
+      position: relative;
+      padding: 0 0.75rem;
+    } 
+    .cart-badge {
+       position: absolute;
+      top: -2px;
+      right: 2px;
+      background: black;
+      color: white; 
+      font-size: 0.6rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+        .offcanvas-header {
+      border-bottom: 1px solid #dee2e6;
+    }
+    .menu-item {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #eee;
+      font-weight: 500;
+    }
+    .menu-link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      color: #000;
+    }
+    .menu-link:hover {
+      background-color: #f8f9fa;
+    }
+    .menu-section-title {
+      padding: 1rem;
+      font-size: 0.875rem;
+      color: #666;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+      /* Custom thumbnail styling */
+      .thumbnail-container {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+    .thumbnail-img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: border-color 0.2s;
+    }
+    .thumbnail-img.active {
+        border-color: #0d6efd;
+    }
+
+    .card {
+      /* position: relative; */
+      width: 100%;
+      text-align: bottom;
+    }
+
+    .text-container {
+      /* position: absolute;
+      color: white;
+      left: 50%;
+      top: 95%;
+      transform: translate(-50%, -50%);
+      background-color: none; */
+      padding: 0.5rem;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .imgContainer {
+        position: relative;
+    }
+
+    .itemButton {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+      }
